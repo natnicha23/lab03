@@ -1,0 +1,120 @@
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1000px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #BEBEBe;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
+  </style>
+</head>
+<body>
+
+    
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+      <h4>58160168 Natnicha's Blog</h4>
+             <img src="nut.jpg" style="width:100%">
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="http://angsila.cs.buu.ac.th/~58160168/887371/lab03/lab03.html">หน้าหลัก</a></li>
+        <li><a href="http://angsila.cs.buu.ac.th/~58160168/887371/lab03/grid.html">การใช้งาน Grid ใน Bootstrap</a></li>
+        <li><a href="http://angsila.cs.buu.ac.th/~58160168/887371/lab03/form.html">การใช้งาน Form</a></li>
+         <li><a  href="http://angsila.cs.buu.ac.th/~58160168/887371/lab01/aboutme.html">About Me</a></li>        
+        <li><a href="https://www.facebook.com/Jangpeanutz">My Facebook</a></li>
+        
+       </ul><br>
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search Blog..">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button">
+            <span class="glyphicon glyphicon-search"></span>
+          </button>
+        </span>
+      </div>
+    </div>
+
+    <div class="col-sm-9">
+      <h4><small>RECENT POSTS</small></h4>
+      <hr>
+      <h2>การใช้งาน Grid ใน Bootstrap</h2>
+      <h5><span class="glyphicon glyphicon-time"></span>BY Natnicha Feb 10, 2017.</h5>
+      <h5><span class="label label-danger">Grid</span> 
+          <span class="label label-primary">Bootstrap</span></h5><br>
+      <p>... Grid System คืออะไร ?
+      ถ้าพูดกันแบบบ้านๆ ทั่วไปเราก็คงจะบอกว่าเป็น Layout ที่คอยควบคุมวัตถุต่างๆ บนหน้าเว็บไซต์ให้แสดงผลได้อย่างถูกต้องตามหลัก 
+      box layout 
+      <p>ซึ่งจะส่งผลดีต่อการเขียนหนึ่งหน้าเว็บไซต์ แต่สามารถใช้ร่วมกับอุปกรณ์ทุกขนาดหน้าจอ Grid system ของ Bootstrap เอง แบ่งออกเป็น 12 คอลัมน์ ถ้าให้เห็นภาพง่ายขึ้น</p>
+      <p>ก็น่าจะต้องบอกว่า เหมือนกับตาราง 1 แถว มี 12 คอลัมน์ </p>
+      <br><br>
+      
+      <h4><small>RECENT POSTS</small></h4>
+      <hr>
+      <h2>การใช้งาน Form</h2>
+      <h5><span class="glyphicon glyphicon-time"></span>BY Natnicha Feb 10, 2017.</h5>
+      <h5><span class="label label-success">Form</span></h5><br>
+      <p>... ฟอร์ม (Form) เป็นอ๊อบเจคที่ใช้ติดต่อกับผู้ใช้ทางจอภาพ ซึ่งกำหนดหน้าที่ได้ทั้งการป้อน และการแสดงผลข้อมูล ในการป้อนข้อมูลด้วยฟอร์ม มีเครื่องมือสนับสนุน</p>
+      <p>และควบคุมการป้อนข้อมูล เช่น Combo Box ค่าคุณสมบัติต่างๆ ซึ่งฟอร์มใช้แหล่งของข้อมูลจาก Table หรือคิวรี่</p>
+      <hr>
+
+      <h4>Leave a Comment:</h4>
+      <form role="form">
+        <div class="form-group">
+          <textarea class="form-control" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+
+
+     <br><br>
+      
+      <div class="row">
+        <div class="col-sm-2 text-center">
+        </div>
+        <div class="col-sm-10">
+       
+
+          <br>
+        </div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ <footer><center><link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet" ></font>
+ </footer></center>
+
+
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+  <title>Bootstrap Grid</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 900px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #BEBEBE;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+      <h4>58160168 Natnicha's Blog</h4>
+        <img src="nut.jpg" style="width:100%">
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="http://angsila.cs.buu.ac.th/~58160168/887371/lab03/lab03.html">หน้าหลัก</a></li>
+        <li><a href="http://angsila.cs.buu.ac.th/~58160168/887371/lab03/grid.html">การใช้งาน Grid ใน Bootstrap</a></li>
+        <li><a href="http://angsila.cs.buu.ac.th/~58160168/887371/lab03/form.html">การใช้งาน Form</a></li>
+        
+      </ul><br>
+     </div>
+
+    <div class="col-sm-9">
+      <h2>➤การใช้งาน Grid ใน Bootstrap</h2>
+      <h5><span class="glyphicon glyphicon-time"></span>BY Natnicha Feb 10, 2017.</h5>
+      <p>" Bootstrap Grid System " คือ ตอบสนองและคอลัมน์ที่จะจัดอีกครั้งขึ้นอยู่กับขนาดหน้าจอ บนหน้าจอขนาดใหญ่ ก็อาจจะดูดีขึ้นกับเนื้อหาที่จัดในคอลัมน์ที่สาม</p>
+      <p>แต่บนหน้าจอเล็ก ๆ มันจะดีกว่าถ้ารายการเนื้อหาที่ถูกซ้อน ด้านบนของแต่ละอื่น ๆ</p>
+      <br>
+      <hr>
+
+      <h3>➤ระบบ Bootstrap ตารางมี 4 ชั้น : </h3>
+      <p>-XS (สำหรับโทรศัพท์)</p>
+      <p>-SM (สำหรับแท็บเล็ต)</p>
+      <p>-MD (สำหรับเดสก์ท็)</p>
+      <p>-LG (สำหรับเดสก์ท็ขนาดใหญ่)</p>
+      <p>ชั้นดังกล่าวข้างต้น สามารถรวมกันเพื่อสร้างรูปแบบไดนามิกมากขึ้นและมีความยืดหยุ่น</p>
+      <hr>
+      <h3>ตัวเลือกของ Grid</h3>
+      <p>ตารางต่อไปนี้สรุปวิธีการที่ระบบบูตตารางการทำงานในหลายอุปกรณ์ :</p>
+      <br>
+
+      <div class="table-responsive">
+      <table class="w3-table-all notranslate">
+ <img src="gid.jpg" style="width:70%">
+
+ </div>
+      </table>
+</body>
+</html>

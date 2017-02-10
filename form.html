@@ -1,0 +1,119 @@
+<html lang="en">
+<head>
+  <title>Bootstrap Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1600px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #BEBEBE;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+      <h4>58160168 Natnicha's Blog</h4>
+       <img src="nut.jpg" style="width:100%">
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="http://angsila.cs.buu.ac.th/~58160168/887371/lab03/lab03.html">หน้าหลัก</a></li>
+        <li><a href="http://angsila.cs.buu.ac.th/~58160168/887371/lab03/grid.html">การใช้งาน Grid ใน Bootstrap</a></li>
+        <li><a href="http://angsila.cs.buu.ac.th/~58160168/887371/lab03/form.html">การใช้งาน Form</a></li>
+        
+      </ul><br>
+     </div>
+
+    <div class="col-sm-9">
+      <h2>➤การใช้งาน Form</h2>
+      <h5><span class="glyphicon glyphicon-time"></span>BY Natnicha Feb 10, 2017.</h5>
+      <p>องค์ประกอบของ Form ใน HTML นั้น อาจจะประกอบไปด้วย ช่องกรอบช้อความ ปุ่มต่าง ๆ ตัวเลือกต่าง ๆ เพื่อใช้ในการรับข้อมูลจากผู้ใช้ ก่อนที่เราจะศึกษาเรื่ององค์ประกอบของฟอร์มนั้น เรามาดู Syntax ของ Form กันก่อนดีกว่าครับ form ใน HTML นั้น จะขึ้นต้นแท็กด้วย 
+      < form > และจะปิดท้ายด้วยแท็ก < /form ></p>
+      <hr>
+
+      <h2>➤ประเภทของแบบ Form</h2>
+      <p>(มี 3 ประเภท)</p>
+      <p>-รูปแบบแนวตั้ง (เป็นค่าเริ่มต้น)</p>
+      <p>-รูปแบบแนวนอน</p>
+      <p>-รูปแบบอินไลน์</p>
+      <hr>
+
+      <h2>➤ตัวอย่างของแบบ Form</h2>
+      <h3>Input type="text"</h3>
+      <h5>คือ ช่องให้กรอกข้อมูล ตัวเลข ตัวอักษร อักขระต่างๆ เช่น</h5>
+      <form><input type="Test" class="form-control" placeholder="Enter Test"></form>
+      <hr>
+      <h3>Input type="radio"</h3>
+      <h5>คือ วงกลมเล็กๆเมื่อคลิกแล้วจะมีจุดสีดำอยู่ข้างใน  เช่น</h5>
+      <form>
+        <input name="v" type="radio">ชาย<br>
+               <input name="v" type="radio">หญิง  
+      </form>
+      <hr>
+      <h3>Input type="checkbox"</h3>
+      <h5>คือ รูปสี่เหลี่ยมเล็กๆไว้สำหรับติกเครื่องหมายถูกลงในรูปสี่เหลี่ยมนี้ เช่น</h5>
+      <form>
+        <input name="v" type="checkbox">ชาย<br>
+               <input name="v" type="checkbox">หญิง  
+      </form>
+      <hr>
+      <h3>Input type="submit"</h3>
+      <h5>คือ  ปุ่มตกลง,ยอมรับ หรือยืนยัน เช่น</h5>
+      <form>
+        <input name="v" type="submit"> ตกลง  
+      </form>
+      <hr>
+      <h3>Input type="file"</h3>
+      <h5>คือ เป็นการโหลดไฟล์จากเครื่องขึ้นมาไว้ตามที่กำหนด และจะต้องใช้ประโยคนี้ ENCTYPE="MULTIPART/FORM-DATA  เช่น</h5>
+      <form name="v" enctype="multipart/form-data">  
+      <input name="v" type="file">
+      </form>
+      <hr>
+      <h3>การสร้างตัวเลือกด้วย select</h3>
+      <h5>คือ รูปแบบฟอร์มหลายตัวเลือก (< select > คือตัวให้เลือกลงมาหลายข้อ : < option value="ลำดับแทนชื่อของตัวเลือก ) เช่น
+      </h5>
+      <form>
+        <select>
+                <option value="1">select1                 
+                <option value="2">select2
+                <option value="1">select3
+                <option value="2">select4
+        </select>
+      </form>
+              
+      <hr>
+      <h3>การกำหนดขนาดช่องกรอกข้อมูลด้วย < textarea ></h3>
+       <h5>text คือ ข้อความ</h5>
+       <h5>area คือ พื้นที่ เอามารวมกัน คือ textarea แปลว่า พื้นที่ของข้อความ</h5>
+    
+      <form>
+        <textarea rows="10" cols="90">
+       </textarea>
+      </form>
+      <hr>
+      </body>
+</html>
